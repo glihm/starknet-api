@@ -1737,9 +1737,8 @@ dependencies = [
 
 [[package]]
 name = "starknet-crypto"
-version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "693e6362f150f9276e429a910481fb7f3bcb8d6aa643743f587cfece0b374874"
+version = "0.6.1"
+source = "git+https://github.com/xJonathanLEI/starknet-rs?rev=64ebc364c0c346e81b715c5b4a3b32ef37b055c8#64ebc364c0c346e81b715c5b4a3b32ef37b055c8"
 dependencies = [
  "crypto-bigint",
  "hex",
@@ -1750,7 +1749,7 @@ dependencies = [
  "rfc6979",
  "sha2",
  "starknet-crypto-codegen",
- "starknet-curve 0.3.0",
+ "starknet-curve",
  "starknet-ff",
  "zeroize",
 ]
@@ -1758,37 +1757,25 @@ dependencies = [
 [[package]]
 name = "starknet-crypto-codegen"
 version = "0.3.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "af6527b845423542c8a16e060ea1bc43f67229848e7cd4c4d80be994a84220ce"
+source = "git+https://github.com/xJonathanLEI/starknet-rs?rev=64ebc364c0c346e81b715c5b4a3b32ef37b055c8#64ebc364c0c346e81b715c5b4a3b32ef37b055c8"
 dependencies = [
- "starknet-curve 0.4.0",
+ "starknet-curve",
  "starknet-ff",
  "syn 2.0.25",
 ]
 
 [[package]]
 name = "starknet-curve"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "252610baff59e4c4332ce3569f7469c5d3f9b415a2240d698fb238b2b4fc0942"
-dependencies = [
- "starknet-ff",
-]
-
-[[package]]
-name = "starknet-curve"
 version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a68a0d87ae56572abf83ddbfd44259a7c90dbeeee1629a1ffe223e7f9a8f3052"
+source = "git+https://github.com/xJonathanLEI/starknet-rs?rev=64ebc364c0c346e81b715c5b4a3b32ef37b055c8#64ebc364c0c346e81b715c5b4a3b32ef37b055c8"
 dependencies = [
  "starknet-ff",
 ]
 
 [[package]]
 name = "starknet-ff"
-version = "0.3.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "db2cb1d9c0a50380cddab99cb202c6bfb3332728a2769bd0ca2ee80b0b390dd4"
+version = "0.3.5"
+source = "git+https://github.com/xJonathanLEI/starknet-rs?rev=64ebc364c0c346e81b715c5b4a3b32ef37b055c8#64ebc364c0c346e81b715c5b4a3b32ef37b055c8"
 dependencies = [
  "ark-ff",
  "crypto-bigint",
